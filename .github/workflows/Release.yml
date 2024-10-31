@@ -14,7 +14,8 @@ jobs:
   linux:
     runs-on: ubuntu-latest
     container:
-      image: docker://ghcr.io/gngpp/cargo-zigbuild:latest
+      #image: docker://ghcr.io/gngpp/cargo-zigbuild:latest  #原版
+      docker pull messense/cargo-zigbuild
     steps:
       - uses: actions/checkout@v3
 
