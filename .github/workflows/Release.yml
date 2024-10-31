@@ -14,7 +14,7 @@ jobs:
   linux:
     runs-on: ubuntu-latest
     container:
-      image: docker://ghcr.io/rust-cross/cargo-zigbuild:latest  #原版
+      image: docker://ghcr.io/rust-cross/cargo-zigbuild \  #原版
       #docker pull messense/cargo-zigbuild
     steps:
       - uses: actions/checkout@v3
